@@ -14,7 +14,15 @@ div#outerDiv{
     margin: 0 auto;
     background: #fff url(../images/banner.jpg) no-repeat;
 }
+#outerDiv a:link, #outerDiv a:visited{
+    text-decoration: none;
+    color: #b36b00;
+}
 
+#outerDiv a:hover, #outerDiv a:active{
+    color: #566440;
+    border-bottom: 1px dashed #5 40;
+}
 /*---- header ---*/
 
 div#header{
@@ -119,6 +127,11 @@ margin-top: -5px;
     font-weight: bold;
     color: #666;
     margin: 1ex 0 -.2ex 0;
+}
+#mainContent ul{
+    font-family: Georgia, sans-serif;
+    font-size: .9em;
+    margin: 0 0 1.4ex 1em;
 }
 /* ---sidebar---*/
 #content div#sideBar {
