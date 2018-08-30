@@ -35,6 +35,139 @@ div#header{
     background: url(../images/contact_icon_dual.gif) no-repeat left top;
     border: none;
 }
-#contactButton a:hover, #contactButton a:visited{
+#contactButton a:hover, #contactButton a:active{
     background-position: left bottom;
+}
+/*-- main menu --*/
+
+#header #mainMenu{
+    position: absolute;
+    left: 320px;
+    bottom: 0;
+}
+
+#mainMenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#mainMenu li{
+    float:left;
+    margin: 0;
+    padding: 0;
+}
+#mainMenu li a:link, #mainMenu a:visited{
+    font-family: "Trebuchet MS", sans-serif;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px 0 30px;
+    margin-right: 10px;
+    line-height: 25px;
+    background: url(../images/nav_rollover.jpg) no-repeat left bottom;
+    border: none;
+    
+}
+#mainMenu li a:hover, #mainMenu a:active {
+  color: #f8b449;
+  background-position: top left;
+    
+}
+#mainMenu li a.current{
+margin-top: -5px;
+    height: 30px;
+    background: url(../images/nav_current.jpg);
+    color: #aaa;
+    line-height: 25px;
+}
+
+#mainMenu li a.current:hover{
+    cursor: default;
+}
+#content div#mainContent {
+    float: left;
+    width: 430px;
+    margin: 0;
+    padding: 0 15px;
+}
+
+#mainContent p {
+    font-family: Georgia, serif;
+    font-size: .9em;
+    line-height: 1.4em;
+    color: #000;
+    margin: 1ex 0;    
+}
+#mainContent h1, #mainContent h2, #mainContent h3, #mainContent h4{
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#mainContent h1{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #1b9d95;
+    margin: .0ex 0;
+}
+
+#mainContent h2{
+    font-size: 1.2em;
+    color: #3c3809;
+    margin: .4ex 0;
+}
+#mainContent h4{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #666;
+    margin: 1ex 0 -.2ex 0;
+}
+/* ---sidebar---*/
+#content div#sideBar {
+    float: right;
+    width: 265px;
+    padding: 0 10px;
+    margin: 0;
+    border-left: solid #aaa 1px;
+}
+#sideBar p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: .8em;
+    line-height: 1.2em;
+    color: #666;
+    margin: 0 0 3ex 0;    
+}
+#sideBar h3 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    color: #1b9d95;
+    margin: 0 0 .5ex 0;    
+}
+
+
+/* ---footer---*/
+div#footer{
+    clear: both;
+    background: transparent;
+    margin: 0 auto;
+    padding: 5px;
+/*
+    position: absolute;
+    left: 500px
+*/
+}
+
+#footer p{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: .75em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+#footer a{
+    color: #1b9d95;
+    text-decoration: none;
+}
+/* ---misc styles---*/
+.clear{
+    clear: both;
 }
