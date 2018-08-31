@@ -1,19 +1,21 @@
 /*---- golbal style ---*/
-
 body {
     font-family: Georgia, serif;
     background: #bbb url(../images/page_background.jpg);
     margin: 0;
     padding: 0;
 }
+
 p, h1, h2, h3, h4, h5, h6, li {
     margin: 1ex 1em;
 }
+
 div#outerDiv{
     width: 770px;
     margin: 0 auto;
     background: #fff url(../images/banner.jpg) no-repeat;
 }
+
 #outerDiv a:link, #outerDiv a:visited{
     text-decoration: none;
     color: #b36b00;
@@ -23,12 +25,13 @@ div#outerDiv{
     color: #566440;
     border-bottom: 1px dashed #5 40;
 }
-/*---- header ---*/
 
+/*---- header ---*/
 div#header{
     height: 110px;
     position: relative;
 }
+
 /*---- ContactUs Button ---*/
 #outerDiv div#contactButton{
     position: absolute;
@@ -46,8 +49,8 @@ div#header{
 #contactButton a:hover, #contactButton a:active{
     background-position: left bottom;
 }
-/*-- main menu --*/
 
+/*-- main menu --*/
 #header #mainMenu{
     position: absolute;
     left: 320px;
@@ -59,11 +62,13 @@ div#header{
     margin: 0;
     padding: 0;
 }
+
 #mainMenu li{
     float:left;
     margin: 0;
     padding: 0;
 }
+
 #mainMenu li a:link, #mainMenu a:visited{
     font-family: "Trebuchet MS", sans-serif;
     display: block;
@@ -76,11 +81,13 @@ div#header{
     border: none;
     
 }
+
 #mainMenu li a:hover, #mainMenu a:active {
   color: #f8b449;
   background-position: top left;
     
 }
+
 #mainMenu li a.current{
 margin-top: -5px;
     height: 30px;
@@ -92,6 +99,7 @@ margin-top: -5px;
 #mainMenu li a.current:hover{
     cursor: default;
 }
+
 #content div#mainContent {
     float: left;
     width: 430px;
@@ -106,6 +114,7 @@ margin-top: -5px;
     color: #000;
     margin: 1ex 0;    
 }
+
 #mainContent h1, #mainContent h2, #mainContent h3, #mainContent h4{
     font-family: "Trebuchet MS", sans-serif;
 }
@@ -122,17 +131,124 @@ margin-top: -5px;
     color: #3c3809;
     margin: .4ex 0;
 }
+
 #mainContent h4{
     font-size: 1.1em;
     font-weight: bold;
     color: #666;
     margin: 1ex 0 -.2ex 0;
 }
+
 #mainContent ul{
     font-family: Georgia, sans-serif;
     font-size: .9em;
     margin: 0 0 1.4ex 1em;
 }
+
+/*--gear sub navigation--*/
+#mainContent ul#gearSubNav{
+    width: 340px;
+    margin: 0 auto;
+    list-style: none;
+}
+#mainContent ul#gearSubNav li{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#mainContent ul#gearSubNav a{
+    width: 70px;
+    height: 20px;
+    font-family: "Orator Std", Orator, sans-serif;
+    font-size: .9em;
+    text-align: center;
+    padding-top: 100px;
+    margin-right: 20px;
+    border: none;
+    display: block;
+}
+#mainContent ul#gearSubNav a.last{
+    margin-right: 0;
+}
+#mainContent ul#gearSubNav a.boards{
+    background: url(../images/rollovers/board-off.jpg) no-repeat center top;
+}
+#mainContent ul#gearSubNav a.swimwear{
+    background: url(../images/rollovers/swim-off.jpg) no-repeat center top;
+}
+#mainContent ul#gearSubNav a.wetsuits{
+    background: url(../images/rollovers/wetsuit-off.jpg) no-repeat center top;
+}
+#mainContent ul#gearSubNav a.etc{
+    background: url(../images/rollovers/sandals-off.jpg) no-repeat center top;
+}
+#mainContent ul#gearSubNav a.boards:hover{
+    background: url(../images/rollovers/board-on.jpg) no-repeat center top;
+}
+#mainContent ul#gearSubNav a.swimwear:hover{
+    background: url(../images/rollovers/swim-on.jpg) no-repeat center top;
+}
+#mainContent ul#gearSubNav a.wetsuits:hover{
+    background: url(../images/rollovers/wetsuit-on.jpg) no-repeat center top;
+}
+#mainContent ul#gearSubNav a.etc:hover{
+    background: url(../images/rollovers/sandals-on.jpg) no-repeat center top;
+}
+
+/*--- gear sales box --- */
+img.leftFloatImage{
+    float: left;
+    padding: 15px;
+}
+
+div#gearDesc{
+    float: right;
+    width: 260px;
+    padding-top: 20px;
+}
+
+div#gearDesc h3{
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    color: #c47500;
+    border-bottom: 1px solid #344;
+    padding-bottom: .2em;
+    margin: 0;
+}
+
+div#gearDesc p{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: .8em;    
+}
+
+div#gearDesc p.price{
+    text-align: right;
+    font-size: 1.2em;
+}
+
+/*--- Lifestyle sub navigation --- */
+#mainContent p.leftMenu{
+    font-family: "Trebuchet MS", sans-serif;
+    margin-top: 0;
+}
+#mainContent p.leftMenu a{
+    color: #566440;
+}
+#mainContent p.leftMenu a:hover{
+    color: #b36b00;
+    border: none;
+}
+    
+/*.leftMenu a:link, .leftMenu a:visited{
+    font-family: "Trebuchet MS", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    line-height: 25px;
+    border: none; 
+}
+#mainContent.leftMenu:hover, #mainContent.leftMenu:active{
+    color: #f8b449;
+}*/
 /* ---sidebar---*/
 #content div#sideBar {
     float: right;
@@ -141,6 +257,7 @@ margin-top: -5px;
     margin: 0;
     border-left: solid #aaa 1px;
 }
+
 #sideBar p {
     font-family: "Trebuchet MS", sans-serif;
     font-size: .8em;
@@ -148,6 +265,7 @@ margin-top: -5px;
     color: #666;
     margin: 0 0 3ex 0;    
 }
+
 #sideBar h3 {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 1em;
@@ -155,6 +273,25 @@ margin-top: -5px;
     margin: 0 0 .5ex 0;    
 }
 
+#sideBar img{
+    margin: 0 25px;
+}
+
+#sideBar img.photo{
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+#sideBar ol{
+  margin: .5em 0 1.5em 0;  
+}
+#sideBar li{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: .8em;
+    line-height: .8em;
+    color: #666;
+    margin: .2em .5em;
+}
 
 /* ---footer---*/
 div#footer{
@@ -176,11 +313,17 @@ div#footer{
     padding: 0;
     text-align: center
 }
+
 #footer a{
     color: #1b9d95;
     text-decoration: none;
 }
+
 /* ---misc styles---*/
 .clear{
     clear: both;
+}
+
+div#youtubeVideo{
+    margin: 20px 0 20px 30px;
 }
